@@ -1,0 +1,11 @@
+# netlify.toml - Configure React SPA with TailwindCSS
+
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# Redirect all routes to index.html (important for React Router SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
