@@ -43,12 +43,19 @@
 
 .homepage-image-wrapper {
 	overflow: hidden;
-	border-radius: 10%;
-	transform: rotate(3deg);
+	border-radius: 16px;
+	transform: rotate(2deg);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .homepage-image-wrapper img {
 	width: 100%;
+}
+
+.homepage-image-wrapper:hover {
+	transform: rotate(0deg) translateY(-4px);
+	box-shadow: 0 28px 60px rgba(0, 0, 0, 0.16);
 }
 
 .homepage-socials {
@@ -56,17 +63,20 @@
 	justify-content: left;
 	align-items: center;
 	padding-top: 30px;
+	gap: 8px;
 }
 
 .homepage-social-icon {
 	padding-right: 20px;
-	font-size: 25px;
-	transition: color 0.2s ease-in-out;
+	font-size: 26px;
+	transition: color 0.2s ease, transform 0.2s ease;
 	color: var(--secondary-color);
+	filter: drop-shadow(0 1px 0 rgba(0,0,0,0.03));
 }
 
 .homepage-social-icon:hover {
 	color: var(--primary-color);
+	transform: translateY(-2px);
 }
 
 .homepage-after-title {
@@ -148,3 +158,4 @@
 		margin-right: -25px;
 	}
 }
+

@@ -1,36 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-
 import "./style/article.css";
 
-const Article = (props) => {
-	const { date, title, description, link } = props;
+const Article = ({ date, title, description, link, author, readingTime }) => {
+  return (
+    <div className="article-card">
+      <div className="article-date">{date}</div>
 
-	return (
-		<React.Fragment>
-			<div className="article">
-				<div className="article-left-side">
-					<div className="article-date">{date}</div>
-				</div>
+      <h2 className="article-title">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {title}
+        </a>
+      </h2>
 
-				<Link to={link}>
-					<div className="article-right-side">
-						<div className="article-title">{title}</div>
-						<div className="article-description">{description}</div>
-						<div className="article-link">
-							Read Article{" "}
-							<FontAwesomeIcon
-								style={{ fontSize: "10px" }}
-								icon={faChevronRight}
-							/>
-						</div>
-					</div>
-				</Link>
-			</div>
-		</React.Fragment>
-	);
+      <p className="article-meta">
+        {author} • {readingTime}
+      </p>
+
+      <p className="article-description">{description}</p>
+
+      <a
+        href={link}
+        className="article-readmore"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Read Article →
+      </a>
+    </div>
+  );
 };
 
 export default Article;

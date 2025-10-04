@@ -3,7 +3,10 @@
 .card {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	outline: 2px solid #f4f4f5;
+	outline: 1px solid #eeeef0;
+	background: #ffffff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+	transition: transform 0.2s ease, box-shadow 0.2s ease, outline-color 0.2s ease;
 }
 
 .card-container {
@@ -31,4 +34,10 @@
 .card-body {
 	padding-top: 40px;
 	font-size: 15px;
+}
+
+.card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+	outline-color: #e7e7ea;
 }
