@@ -1,36 +1,40 @@
 const SEO = [
 	{
 		page: "home",
-		description:"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+		description:
+			"Salil Samdarshy — React Native developer with 7+ years building high-performance Android & iOS apps across fintech, healthcare, and e-commerce.",
+		keywords: [
+			"Salil Samdarshy",
+			"React Native Developer",
+			"Android Developer",
+			"iOS",
+			"Mobile Engineer",
+			"Cross-platform",
+		],
 	},
-
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"About Salil Samdarshy — mobile engineer specializing in React Native, Android, and iOS at Antier Solutions.",
+		keywords: ["Salil Samdarshy", "React Native", "Android", "Mobile"],
 	},
-
 	{
 		page: "articles",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Thoughts on mobile development, React Native, leadership, and product craft.",
+		keywords: ["Salil Samdarshy", "React Native", "Mobile blog"],
 	},
-
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Selected mobile and full-stack projects by Salil Samdarshy — React Native, Android, and Node.js.",
+		keywords: ["Salil Samdarshy", "React Native projects", "Android apps"],
 	},
-
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Get in touch with Salil Samdarshy for React Native, Android, or iOS collaboration.",
+		keywords: ["Salil Samdarshy", "contact", "hire React Native developer"],
 	},
 ];
 

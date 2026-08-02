@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@500&display=swap");
 @import "./data/styles.css";
 
 body {
 	margin: 0;
-	font-family: var(--primary-font);
+	font-family: var(--font-body);
+	background: var(--bg);
+	color: var(--text);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

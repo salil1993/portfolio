@@ -1,14 +1,33 @@
 :root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
-	/* ---------------------- */
+	/* Atmosphere — ink lab, not purple / cream / broadsheet */
+	--bg: #0a0c10;
+	--bg-elevated: #12151c;
+	--bg-soft: #181c26;
+	--surface: rgba(242, 240, 235, 0.04);
+	--border: rgba(242, 240, 235, 0.1);
+	--border-strong: rgba(242, 240, 235, 0.18);
 
-	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
-	/* --------------------- */
+	--text: #f2f0eb;
+	--text-muted: #9a958c;
+	--text-dim: #6b675f;
+
+	--accent: #d6ff3f;
+	--accent-dim: rgba(214, 255, 63, 0.14);
+	--accent-ink: #0a0c10;
+
+	--primary-color: var(--text);
+	--secondary-color: var(--text-muted);
+	--tertiary-color: var(--text-dim);
+	--quaternary-color: var(--border);
+	--link-color: var(--accent);
+
+	--font-display: "Syne", sans-serif;
+	--font-body: "Plus Jakarta Sans", sans-serif;
+	--font-accent: "Newsreader", Georgia, serif;
+	--primary-font: var(--font-body);
+	--secondary-font: var(--font-display);
+
+	--section-pad: clamp(4.5rem, 10vw, 7.5rem);
+	--content-max: 1120px;
+	--ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
